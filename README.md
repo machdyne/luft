@@ -2,13 +2,15 @@
 
 Luft is an experimental open-source air sensor controller with sockets for up to four MQ gas sensor modules. In addition to MQ modules, you can also connect a SEN55 module (particulate matter, Volatile Organic Compounds, Nitrogen Oxides, humidity, and temperature) and a I2C oxygen sensor, CO₂ sensor, or other I2C sensors.
 
-Luft enables remote monitoring of gasses, air quality and other environmental factors.
-
 ![Luft](https://github.com/machdyne/luft/blob/2c4f1d8e13273574a24588450f4d979c41fc7301/luft.png)
+
+Luft enables remote monitoring of gasses, air quality and other environmental factors.
 
 The alarm can be triggered by either the MCU or the MQ modules based on their potentiometer setting. The alarm is only activated when JP1 is shunted with a jumper or key switch.
 
 This repo contains schematics, PCB layouts, a DIN-mountable 3D-printable case, and documentation.
+
+Find more information on the [Luft product page](https://machdyne.com/product/luft-air-sensor-controller/).
 
 ## Configuration (Tasmota)
 
