@@ -2,6 +2,11 @@
  * Luft Case
  * Copyright (c) 2025 Lone Dynamics Corporation. All rights reserved.
  *
+ * required hardware:
+ *  - 4 x M3 x 6mm bolts
+ *  - 4 x M3 x 25mm bolts
+ *  - 8 x M3 nuts
+ *
  */
 
 $fn = 100;
@@ -29,8 +34,8 @@ translate([0,0,-15])
 	mta_case_bottom();
 
 translate([45,-4,-20])
-	mta_din_clip();
-    
+    mta_din_clip();
+ 
 translate([45,-25,-20])
 	mta_din_endclip();
 
@@ -188,9 +193,9 @@ module mta_case_bottom() {
 module mta_din_clip() {
     
     difference() {
-        translate([0,0,-3]) rcube(40,20,6,2.5);
+        translate([0,0,-3]) rcube(42,20,6,2.5);
         translate([0,0,-2]) cube([35-3,50,5], center=true);
-        translate([0,0,-0.25]) cube([35,50,1.5], center=true);
+        translate([0,0,-0.25]) cube([35+1,50,1.5], center=true);
         cylinder(d=3.5, h=50);
         translate([10,0,0]) cylinder(d=3.5, h=50);
         translate([-10,0,0]) cylinder(d=3.5, h=50);
@@ -201,12 +206,9 @@ module mta_din_clip() {
 module mta_din_endclip() {
     
     difference() {
-        translate([0,0,-3]) rcube(40,20,6,2.5);
+        translate([0,0,-3]) rcube(42,10,6,2.5);
         translate([0,0,-2]) cube([35-3,50,5], center=true);
-        translate([0,10,-0.25]) cube([35,30,1.5], center=true);
-        cylinder(d=3.5, h=50);
-        translate([10,0,0]) cylinder(d=3.5, h=50);
-        translate([-10,0,0]) cylinder(d=3.5, h=50);
+        translate([0,5,-0.25]) cube([35+1,15,1.5], center=true);
     }
     
 }
