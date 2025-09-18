@@ -21,7 +21,7 @@ This repo contains schematics, PCB layouts, a DIN-mountable 3D-printable case, a
 ### Pinout
 
 | GPIO | Function | Description |
-|------|----------| |
+| ---- | -------- | ----------- |
 | GPIO0 | ADC MQ 3 | MQ3 analog |
 | GPIO1 | ADC MQ 4 | MQ4 analog |
 | GPIO3 | ADC MQ 2 | MQ2 analog |
