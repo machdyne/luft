@@ -190,12 +190,14 @@ module mta_case_bottom() {
 	}	
 }
 
+// print clips upside down with no supports
+
 module mta_din_clip() {
     
     difference() {
         translate([0,0,-3]) rcube(42,20,6,2.5);
         translate([0,0,-2]) cube([35-3,50,5], center=true);
-        translate([0,0,-0.25]) cube([35+1,50,1.5], center=true);
+        translate([0,0,-0.05]) cube([35+1,50,1.1], center=true);
         cylinder(d=3.5, h=50);
         translate([10,0,0]) cylinder(d=3.5, h=50);
         translate([-10,0,0]) cylinder(d=3.5, h=50);
@@ -208,7 +210,7 @@ module mta_din_endclip() {
     difference() {
         translate([0,0,-3]) rcube(42,10,6,2.5);
         translate([0,0,-2]) cube([35-3,50,5], center=true);
-        translate([0,5,-0.25]) cube([35+1,15,1.5], center=true);
+        translate([0,5,-0.05]) cube([35+1,15,1.1], center=true);
     }
     
 }
